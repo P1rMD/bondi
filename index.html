@@ -2,158 +2,322 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Paralax Effects</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="bower_components/bootstrap-grid-only/css/grid12.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Coder | Test Task</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300' rel='stylesheet' type='text/css'> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-	<div class="menu">
-		<div>Black Bird</div>
-		<nav>
-			<span class="store">Store</span>
-			<span class="style">Style</span>
-			<span class="history">History</span>
-			<span class="designer">Designer</span>
-		</nav>
+<!-- LOGO -->
+	<div class="logo_container">
+		<div class="container">
+			<a href="#"><img class="logo" src="images/logo.png" alt="Web coder"></a>
+		</div>
 	</div>
-
-	<div class="content">
-
-		<header class="bird-box">
-			<div class="logo"></div>
-			<div class="fore-bird"></div>
-			<div class="back-bird"></div>
-		</header>
-
-
+	<div class="section_main">
 		<div class="container">
 			<div class="row">
-
-				<section id="store" class="col-xs-offset-3 col-xs-6">
-					<h1>Clothing Store</h1>
-					<hr>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita accusantium a consectetur architecto iusto tempore sunt, alias atque quibusdam molestias dolores et similique quidem ducimus dolore quod, soluta ut ad aspernatur! Ipsa quia natus, dicta magnam et sit harum temporibus saepe earum consequuntur rem qui cum perferendis repellat ex necessitatibus commodi vel officia tenetur quae deleniti explicabo aperiam laborum ipsam.
-					</p>
-					<hr>
-				</section>
-
-				<section class="col-xs-offset-3 col-xs-6 clothes-pics">
-					<div class="row img-row">
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model1.jpg" alt="model 1">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model2.jpg" alt="model 2">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model3.jpg" alt="model 3">
-						</figure>
+				<div class="col-md-12 main_wrapper">
+<!-- BIG SLIDER -->
+					<div class="col-md-6 slider">
+						<div class="slides">
+							<img class="slide" src="images/slide1.jpg" alt="Penny">
+							<img class="slide" src="images/slide2.jpg" alt="Nice couple">
+							<img class="slide" src="images/slide3.jpg" alt="Boy with girl">
+							<img class="slide" src="images/slide4.jpg" alt="Chick">
+						</div>
+						<div class="controls"></div>
 					</div>
-
-					<div class="row img-row">
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model1.jpg" alt="model 1">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model2.jpg" alt="model 2">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model3.jpg" alt="model 3">
-						</figure>
+<!-- REGISTER FORM -->
+					<div class="col-md-6 register_form">
+						<h2>Join us now. It's FREE</h2>
+						<form id="registration">
+							<div class="col-sm-6 sex">
+								<div class="col-xs-4">
+									<label class="user_sex" for="user_sex" data-on="male" data-off="female">I am</label>
+								</div>
+								<div class="col-xs-8">
+									<label class="checkbox">
+										<input type="checkbox" id="user_sex" class="user_sex">
+										<span class="sex_button"></span>
+									</label>
+								</div>
+							</div>
+							<div class="col-sm-6 sex">
+								<div class="col-xs-4 no-padding">
+									<label class="user_sex search" for="looking_sex" data-on="male" data-off="female"><span class="span_looking"><img class="search_icon" src="images/search_icon.png" alt="search icon">Looking for</span></label>
+								</div>
+								<div class="col-xs-8">
+									<label class="checkbox">
+										<input type="checkbox" id="looking_sex" class="user_sex" checked>
+										<span class="sex_button"></span>
+									</label>
+								</div>
+							</div>
+							<div class="col-sm-12 sex">
+								<div class="col-xs-2">
+									<label class="name" for="name">Name</label>
+								</div>
+								<div class="col-xs-10">
+									<input type="text" id="name" class="name_input fwidth" required="">
+								</div>
+							</div>
+							<div class="col-sm-12 sex">
+								<div class="col-xs-2">
+									<label clas="day" for="day">Age</label>
+								</div>
+								<div class="col-xs-10">
+									<select name="day">
+										<option>1-10</option>
+										<option>11-20</option>
+										<option>21-31</option>
+									</select>
+									<select class="month">
+										<option>january</option>
+										<option>february</option>
+										<option>march</option>
+										<option>april</option>
+										<option>may</option>
+										<option>june</option>
+										<option>july</option>
+										<option>august</option>
+										<option>september</option>
+										<option>october</option>
+										<option>november</option>
+										<option>december</option>
+									</select>
+									<select class="year">
+										<option>1989</option>
+										<option>1990</option>
+										<option>1991</option>
+										<option>1992</option>
+										<option>1993</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-12 sex">
+								<div class="col-xs-2">
+									<label class="city" for="city">City</label>
+								</div>
+								<div class="col-xs-10">
+									<select name="city" class="fwidth">
+										<option>New-York</option>
+										<option>Paris</option>
+										<option>Berlin</option>
+										<option>Bejing</option>
+										<option>Kyiv</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-offset-2 col-sm-10">	
+							<div class="col-sm-6 row">		
+								<input id="cool" name="cool" type="checkbox" checked><label class="cool" for="cool" >I'm cool</label></br>
+								<input id="good" name="good" type="checkbox"><label class="good" for="good" >Life's good</label>
+							</div>
+							<div class="col-sm-6 row">	
+								<div class="col-sm-12 row">	
+									<input id="tea" name="tea" type="radio"><label class="tea" for="tea" > Tea</label></br>
+								</div>
+								<div class="col-sm-12 row">	
+									<input id="beer" name="tea" type="radio" checked><label class="beer" for="cool" > Beer</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-2 col-sm-10 submit_button">	
+							<input type="submit" id="submit" value="Start Now" type="text" class="fwidth">
+						</div>	
+						</form>
 					</div>
-					<div class="row img-row">
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model1.jpg" alt="model 1">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model2.jpg" alt="model 2">
-						</figure>
-						<figure class="col-xs-12 col-md-4">
-							<img src="images/model3.jpg" alt="model 3">
-						</figure>
-					</div>
-				</section>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- MAIN -->
+	<div class="container main">
+		<div class="col-md-6">
+			<h2>Code this block </h2>
+			<img class="rounded pull-left" src="images/rounded.jpg">
+			<p>This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage.</p>
+		</div>
+		<div class="col-md-5 col-md-offset-1">
+			<h2>Users List </h2>
+			<div class="small-slider" id="carousel">
+				<span class="prev" id="slide-left"></span>
+				<div class="gallery" id="gallery">
+					<ul class="images">
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-slide">
+								<img src="images/sexy_girl.jpg" alt="Sexy Girl">
+									<div class="overlay">
+										<span class="username">SexyGirl</span>
+										<span class="wink"></span>
+										<span class="add_user"></span>
+									</div>
+							</div>
+						</li>
+					</ul>
+					<span class="next" id="slide-right"></span>
+				</div>
+			</div>
 
-
-				<section id="style" class="col-xs-offset-3 col-xs-6">
-					<h1>Unique Style</h1>
-					<hr>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita accusantium a consectetur architecto iusto tempore sunt, alias atque quibusdam molestias dolores et similique quidem ducimus dolore quod, soluta ut ad aspernatur! Ipsa quia natus, dicta magnam et sit harum temporibus saepe earum consequuntur rem qui cum perferendis repellat ex necessitatibus commodi vel officia tenetur quae deleniti explicabo aperiam laborum ipsam.
-					</p>
-					<hr>
-				</section>
-
-
-				<section class="col-xs-offset-3 col-xs-6 large-window">
-					<div class="window-tint"></div>
-					<div class="promo-text">
-						Fall Suites <div><i>from</i> <strong>$99</strong></div>
-						<a href="#">Shop now</a>
-					</div>
-				</section>
-
-				
-				<section id="history" class="col-xs-offset-3 col-xs-6">
-					<h1>Rich History</h1>
-					<hr>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita accusantium a consectetur architecto iusto tempore sunt, alias atque quibusdam molestias dolores et similique quidem ducimus dolore quod, soluta ut ad aspernatur!
-					</p>
-					<hr>
-				</section>
-
-				<section class="col-xs-offset-3 col-xs-6 blog-posts">
+			<div class="tabs-container row">
+				<div class="tabs-header col-md-12">
 					<div class="row">
-						<div class="col-xs-4 post post-1">
-							<div class="post-content">
-								<h3>Post title</h3>
-								<img src="images/posts/one.jpg" alt="first post">
-								<p>Lorem ipsum dolor sit amet.</p>
-								<a href="#">Read more</a>
-							</div>
+						<ul class="tabs-switch">
+							<li class="tab-head"><a href="#tab1">Users List</a></li>
+							<li class="tab-head active last"><a href="#tab2">Active list tab<span class="active-quant"> | 38</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tabs-content col-md-12" id="tab1">
+					<p>There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+				</div>
+				<div class="tabs-content active col-md-12" id="tab2">
+					<div class="col-md-8">
+						<div class="count-stripe">
+							<span class="number"><span class="num">40</span>%</span>
+							<span class="stripe"></span>
 						</div>
-						<div class="col-xs-4 post post-2">
-							<div class="post-content">
-								<h3>Post title</h3>
-								<img src="images/posts/two.jpg" alt="second post">
-								<p>Lorem ipsum dolor sit amet.</p>
-								<a href="#">Read more</a>
-							</div>
+						<div class="count-steps">
+							<span class="step active" value="1">Step 1</span>
+							<span class="step" value="2">Step 2</span>
+							<span class="step" value="3">Step 3</span>
+							<span class="step" value="4">Step 4</span>
+							<span class="step" value="5">Step 5</span>
 						</div>
-						<div class="col-xs-4 post post-3">
-							<div class="post-content">
-								<h3>Post title</h3>
-								<img src="images/posts/three.jpg" alt="third post">
-								<p>Lorem ipsum dolor sit amet.</p>
-								<a href="#">Read more</a>
-							</div>
+						<div class="range-slider">
+							<input type="range">
 						</div>
 					</div>
-				</section>
+					<div class="col-md-4">
+						<div class="chart">
+							<div class="pie" data-start="0" data-value="132"></div>
+							<div class="center-count">37%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="col-md-12">
+			<h2>How to succeed in online dating</h2>
+			<div class="three-blocks">
+				<p>There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+			
+				<span class="orange">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</span>
+			
+				<p>You can also upload photos to your dating profile from your Facebook account. </p>
+				<ol type="1">
+					<li>Access your dating life even when you’re not browsing <a class="link" href="www.cupid.com">Cupid.com!</a></li>
+					<li>Search for new matches from your browser easily</li>
+					<li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info</li>
+					<li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends</li>
+				</ol>
 
-				<section id="designer" class="col-xs-offset-3 col-xs-6">
-					<h1>Perfecto designer</h1>
-					<hr>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita accusantium a consectetur architecto iusto tempore sunt, alias atque quibusdam molestias dolores et similique quidem ducimus dolore quod!
-					</p>
-					<hr>
-				</section>
-
-			</div> <!-- end bootstrap row  -->
-		</div> <!-- end bootstrap container  -->
-	</div> <!-- end content -->
-	
-	<div class="scroller" id="scroller">&uArr;</div>
-
-	<footer>
-		&copy; Black Bird
-	</footer>
-	<script src="js/paralax.js"></script>
-	<script src="js/scroll.js"></script>
+				<span class="quote">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</span>
+				<p><a href="#" class="view-more">Click here to view more</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<a href="#"><img class="footer-logo" src="images/logo_footer.png" alt="Web coder"></a>
+			<p class="copyright"><span class="grey">VD</span> Web Coder Test Task</p>
+			<p class="year">2017</p>
+		</div>
+	</div>
+<script src="js/jquery/dist/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
