@@ -1,0 +1,68 @@
+@import 'settings';
+
+
+.top, .advertise, .footer {
+	background-color: $darkBlue;
+}
+
+.portfolio, .team {
+	background-color: $greyBlue;
+}
+
+.newsletter {
+	background-color: $yellow;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: $maw;
+	@include flex (flex, row, wrap, center, '');
+}
+
+.top-wrapper {
+	min-height: 500px;
+}
+
+.services-wrapper {
+	min-height: 726px;
+}
+
+.portfolio-wrapper {
+	min-height: 996px;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about_us-wrapper {
+	min-height: 790px;
+}
+
+.team-wrapper {
+	min-height: 712px;
+}
+
+.client-wrapper {
+	min-height: 182px;
+}
+
+.advertise-wrapper {
+	min-height: 390px;
+}
+
+.blog-wrapper {
+	min-height: 652px;
+}
+
+.newsletter-wrapper {
+	min-height: 90px;
+	align-items: center;
+}
+
+.footer-wrapper {
+	min-height: 355px;
+	font-size: 13px;
+    color: $lightGrey;
+    font-weight: 400;
+}

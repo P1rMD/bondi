@@ -1,0 +1,64 @@
+@import 'normalize';
+@import 'settings';
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-family: $roboto;
+	background-color: #fff;
+}
+
+header  {
+	@include flex (flex, row, wrap, space-between, center);
+	height: 100%;
+	flex-basis: 100%;
+	margin-top: 20px;
+}
+
+h1 {
+	margin-bottom: 7px;
+	color: $white;
+	font-size: 51px;
+	font-weight: 300;
+ }
+
+h2 {
+   font-size: 35px;
+   font-weight: 500;
+   color: $darkBlue;
+ }
+
+h3 {
+	padding-left: 25px;
+	color: $yellow;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+h4 {
+	margin-top: 0;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+button {
+	@extend %btn;
+}
+
+p {
+	@extend %paragraph;
+}
+
+ul {
+	@extend %ul;
+}
+
+a {
+	text-decoration: none;
+}
